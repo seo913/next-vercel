@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='flex justify-center mt-5'>
+        <Link href="/" className='mr-3'>Main</Link>
+        <Link href="/create">글작성</Link>
+        </div>
+        {children}</body>
     </html>
   )
 }
