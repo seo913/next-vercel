@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from "next/link";
 export default function Delete({result}){
@@ -15,7 +15,7 @@ export default function Delete({result}){
                     body : result[i]._id
                     }).then(()=>{ 
                         e.target.parentElement.style.display='none';
-                    })
+                    });
                 }}>삭제: 🗑️</button>
               </div>
             );
