@@ -13,7 +13,7 @@ export default function Delete({result}){
                     fetch('./api/post/delete', 
                     {method :'POST', 
                     body : result[i]._id
-                    }).then(()=>{
+                    }).then(()=>{ 
                         e.target.parentElement.style.display='none';
                     })
                 }}>삭제: 🗑️</button>
