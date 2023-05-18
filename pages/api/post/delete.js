@@ -6,5 +6,5 @@ export default async function Delete(req,res){
         const db = (await connectDB).db('forum');
         let result = await db.collection('post').deleteOne({_id:new ObjectId(req.body)});
         return res.status(200).redirect(302,'/');
-    }
+    };
 }
