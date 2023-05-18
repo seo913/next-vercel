@@ -18,6 +18,6 @@ export const authOptions = {
   ],
   
   //jwt생성시쓰는암호 (아무거나 암호 쓰기)
-  secret : 'qwer1234'
+  secret : 'qwer1234' 
 };
 export default NextAuth(authOptions); 
