@@ -20,7 +20,7 @@ export default async function Edit(props){
             <span className="flex justify-center items-center" >내용:  
             <textarea type="text" className="border-2 w-2/3 h-48 ml-2 text-black resize-none" 
             name="content"
-            // defaultValue={result.content}
+            defaultValue={result.content}
             // value={contentvalue}
             // onChange={contentChange}
             /></span>
