@@ -22,10 +22,11 @@ export default async function RootLayout({ children }) {
         <div className='flex justify-center mt-5'>
         <Link href="/" className='mr-3'>Main</Link>
         <Link href="/create" className='mr-3'>글작성</Link>
+        <Link href="/register" className='mr-3'>회원가입</Link>
         </div>
         <div className='flex justify-center items-center'>{
           session ? <div className='flex items-center'>
-          <span className=' font-bold'>{session.user.name} 님 환영합니다 😍 </span>
+          <span className=' font-bold' >{session.user.name} 님 환영합니다 😍 </span>
           <span className='ml-3'><LogOutBtn /></span>
           </div>
           :<LoginBtn/>
